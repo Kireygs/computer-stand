@@ -1,0 +1,36 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Қош келдіңіз!</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+
+    <div>
+      <img src="assets/imgs/main-logo.jpg" alt="">
+    </div>
+
+      <ion-list>
+
+          <ion-item>
+            <ion-label floating>Логин</ion-label>
+            <ion-input type="text" [(ngModel)]="username"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label floating>Пароль</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+        </ion-list>
+  
+        <div>
+            <button ion-button block (click)="signIn()">Кіру</button>
+            <br>
+            <button ion-button block (click)="openRegPage()">Тіркелу</button>
+        </div>
+  </ion-content>
+  

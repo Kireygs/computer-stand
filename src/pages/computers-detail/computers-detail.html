@@ -1,0 +1,22 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{item.kind}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img src="{{item.img}}" alt="">
+  <h2>{{item.title}}</h2>
+  <p>{{item.info}}</p>
+  <div class="item-item">
+    <img class="tenge-img" src="assets/imgs/tg.png" alt="">
+    <ion-item>
+      <h2>Бағасы:</h2>
+      <p class="price" item-end>{{item.price}}</p>
+    </ion-item>
+  </div>
+</ion-content>

@@ -1,0 +1,31 @@
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>Тіркелу</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <ion-list>
+  
+        <ion-item>
+          <ion-input type="text" placeholder="Логинді теріңіз" [(ngModel)]="login"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="text" placeholder="Пароль-ді теріңіз" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="text" placeholder="Пароль-ді қайталаңыз" [(ngModel)]="repassword"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="text" placeholder="ФИО" [(ngModel)]="fio"></ion-input>
+        </ion-item>
+      
+      </ion-list>
+      <button ion-button block (click)="reg()">Тіркелу</button>
+  </ion-content>
+  

@@ -1,0 +1,19 @@
+
+.toolbar-background-md, .tabs-md .tabbar {
+    border-color: #b2b2b2;
+    background: linear-gradient(to bottom, rgb(37, 88, 226), hsl(209, 87%, 38%));
+}
+
+
+ .tabs-md .tab-button, .tabs-md .tab-button-icon, .ion-icon, .ion-segment-button,  .toolbar-title-md  {
+    color: #fff;
+    
+}
+
+.tabs-md .tab-button[aria-selected=true], .tabs-md .tab-button[aria-selected=true] .tab-button-icon{
+    color: black;
+}
+
+ion-navbar.toolbar, ion-title { 
+    text-align: center;
+}

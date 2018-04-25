@@ -1,0 +1,78 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Өзіңіз құрастырыңыз</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+        <ion-label>Процессор</ion-label>
+        <ion-select [(ngModel)]="buildCompt.processor" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.processor">{{item.processor}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Cалқындатқыш</ion-label>
+        <ion-select [(ngModel)]="buildCompt.cooling" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.cooling">{{item.cooling}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Жедел жад</ion-label>
+        <ion-select [(ngModel)]="buildCompt.ram" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.ram">{{item.ram}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Аналық тақта</ion-label>
+        <ion-select [(ngModel)]="buildCompt.motherboard" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.motherboard">{{item.motherboard}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Видеокарта</ion-label>
+        <ion-select [(ngModel)]="buildCompt.videocard" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.videocard">{{item.videocard}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Қатқыл тақта</ion-label>
+        <ion-select [(ngModel)]="buildCompt.hard" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.hard">{{item.hard}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Қуаттандыру блогы</ion-label>
+        <ion-select [(ngModel)]="buildCompt.power" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.power">{{item.power}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Операциялық жүйе</ion-label>
+        <ion-select [(ngModel)]="buildCompt.os" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.os">{{item.os}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Кейс</ion-label>
+        <ion-select [(ngModel)]="buildCompt.case" cancelText="Артқа" okText="Таңдау">
+          <ion-option *ngFor="let item of build" [value]="item.case">{{item.case}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    
+  </ion-list>
+</ion-content>
